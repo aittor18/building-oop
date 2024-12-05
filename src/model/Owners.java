@@ -2,12 +2,12 @@ package model;
 
 import java.util.Objects;
 
-public class Propietario {
+public class Owners {
     private String nif;
     private String name;
     private String surname;
 
-    public Propietario(String nif, String name, String surname) {
+    public Owners(String nif, String name, String surname) {
         this.nif = nif;
         this.name = name;
         this.surname = surname;
@@ -41,7 +41,7 @@ public class Propietario {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Propietario that = (Propietario) o;
+        Owners that = (Owners) o;
         return Objects.equals(nif, that.nif) && Objects.equals(name, that.name) && Objects.equals(surname, that.surname);
     }
 

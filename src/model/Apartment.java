@@ -2,12 +2,12 @@ package model;
 
 import java.util.Objects;
 
-public class Apartamento {
+public class Apartment {
     private int floor;
     private String door;
     private String owners;
 
-    public Apartamento(int floor, String door, String owners) {
+    public Apartment(int floor, String door, String owners) {
         this.floor = floor;
         this.door = door;
         this.owners = owners;
@@ -41,7 +41,7 @@ public class Apartamento {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Apartamento that = (Apartamento) o;
+        Apartment that = (Apartment) o;
         return floor == that.floor && Objects.equals(door, that.door) && Objects.equals(owners, that.owners);
     }
 

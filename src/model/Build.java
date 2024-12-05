@@ -2,12 +2,13 @@ package model;
 
 import java.util.Objects;
 
-public class Edificio {
+public class Build {
     private String address;
     private String municipality;
-    private int apartments;
+    private int
+            apartments;
 
-    public Edificio(String address, String municipality, int apartments) {
+    public Build(String address, String municipality, int apartments) {
         this.address = address;
         this.municipality = municipality;
         this.apartments = apartments;
@@ -41,8 +42,8 @@ public class Edificio {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Edificio edificio = (Edificio) o;
-        return apartments == edificio.apartments && Objects.equals(address, edificio.address) && Objects.equals(municipality, edificio.municipality);
+        Build build = (Build) o;
+        return apartments == build.apartments && Objects.equals(address, build.address) && Objects.equals(municipality, build.municipality);
     }
 
     @Override
