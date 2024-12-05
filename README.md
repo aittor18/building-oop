@@ -7,9 +7,9 @@ Crea un programa que permita gestionar un edificio
 ### Edificio
 
 Campos:
-- Dirección
-- Municipio
-- Apartamentos
+~~- Dirección~~
+~~- Municipio~~
+~~- Apartamentos~~
 
 ### Apartamento
 
