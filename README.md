@@ -13,17 +13,17 @@ Campos:
 
 ### Apartamento
 
-Campos:
-- Planta
-- Puerta
-- Propietarios
+~~Campos:~~
+~~- Planta~~
+~~- Puerta~~
+~~- Propietarios~~
 
 ### Propietario
 
-Campos:
-- NIF
-- Nombre
-- Apellidos
+~~Campos:~~
+~~- NIF~~
+~~- Nombre~~
+~~- Apellidos~~
 
 ## Componentes
 
