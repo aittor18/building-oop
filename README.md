@@ -1,6 +1,6 @@
 # Edificio
 
-Crea un programa que permita gestionar un build
+Crea un programa que permita gestionar un building
 
 ## Beans
 
@@ -34,9 +34,9 @@ Haz un reader por cada bean
 ### BuildingApp
 
 Debe tener un método run() que haga:
-- Pide los datos del build
+- Pide los datos del building
 - Inicia un bucle de menú con las siguientes opciones:
-    - Muestra toda la información del build
+    - Muestra toda la información del building
     - Dado una planta y una puerto, devuelve el apartamento en esa planta y puerta. Si no existe dicho apartamento devuelve null.
     - Dado un número de planta, muestra los apartamentos de esa planta
     - Dado una planta y una puerto, devuelve los propietarios del apartamento de esa puerta y planta. Si no existe dicho apartamento devuelve null.

@@ -1,6 +1,6 @@
 package component;
 
-import model.Build;
+import model.Building;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class EdificioReader {
         this.scanner = scanner;
     }
 
-    public Build read() {
+    public Building read() {
         System.out.print("Introduce la dirección del edificio: ");
         String address = scanner.nextLine();
         System.out.print("Introduce el municipio: ");

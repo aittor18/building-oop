@@ -1,13 +1,14 @@
 package model;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Apartment {
     private int floor;
     private String door;
-    private String owners;
+    private Owners[] owners;
 
-    public Apartment(int floor, String door, String owners) {
+    public Apartment(int floor, String door, Owners[] owners) {
         this.floor = floor;
         this.door = door;
         this.owners = owners;
@@ -29,11 +30,11 @@ public class Apartment {
         this.door = door;
     }
 
-    public String getOwners() {
+    public Owners[] getOwners() {
         return owners;
     }
 
-    public void setOwners(String owners) {
+    public void setOwners(Owners[] owners) {
         this.owners = owners;
     }
 
@@ -41,21 +42,22 @@ public class Apartment {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Apartment that = (Apartment) o;
-        return floor == that.floor && Objects.equals(door, that.door) && Objects.equals(owners, that.owners);
+        Apartment apartment = (Apartment) o;
+        return floor == apartment.floor && Objects.equals(door, apartment.door) && Objects.deepEquals(owners, apartment.owners);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(floor, door, owners);
+        return Objects.hash(floor, door, Arrays.hashCode(owners));
     }
+
 
     @Override
     public String toString() {
-        return "Apartamento{" +
+        return "Apartment{" +
                 "floor=" + floor +
                 ", door='" + door + '\'' +
-                ", owners='" + owners + '\'' +
+                ", owners=" + Arrays.toString(owners) +
                 '}';
     }
 }

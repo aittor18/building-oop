@@ -1,14 +1,20 @@
 package model;
 
+import java.util.Arrays;
 import java.util.Objects;
 
-public class Build {
+public class Building {
     private String address;
     private String municipality;
-    private int
-            apartments;
+    private Apartment[] apartments;
 
-    public Build(String address, String municipality, int apartments) {
+    public Building(String address, String municipality, int apartments) {
+        this.address = address;
+        this.municipality = municipality;
+        this.apartments = apartments;
+    }
+
+    public Building(String address, String municipality, Apartment[] apartments) {
         this.address = address;
         this.municipality = municipality;
         this.apartments = apartments;
@@ -30,11 +36,11 @@ public class Build {
         this.municipality = municipality;
     }
 
-    public int getApartments() {
+    public Apartment[] getApartments() {
         return apartments;
     }
 
-    public void setApartments(int apartments) {
+    public void setApartments(Apartment[] apartments) {
         this.apartments = apartments;
     }
 
@@ -42,21 +48,21 @@ public class Build {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Build build = (Build) o;
-        return apartments == build.apartments && Objects.equals(address, build.address) && Objects.equals(municipality, build.municipality);
+        Building building = (Building) o;
+        return Objects.equals(address, building.address) && Objects.equals(municipality, building.municipality) && Objects.deepEquals(apartments, building.apartments);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(address, municipality, apartments);
+        return Objects.hash(address, municipality, Arrays.hashCode(apartments));
     }
 
     @Override
     public String toString() {
-        return "Edificio{" +
+        return "Building{" +
                 "address='" + address + '\'' +
                 ", municipality='" + municipality + '\'' +
-                ", apartments=" + apartments +
+                ", apartments=" + Arrays.toString(apartments) +
                 '}';
     }
 }
