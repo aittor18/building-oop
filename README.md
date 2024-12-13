@@ -1,35 +1,35 @@
-# Edificio
+~~# Edificio~~
 
 Crea un programa que permita gestionar un building
 
-## Beans
+~~## Beans~~
 
-### Edificio
+~~### Edificio~~
 
 Campos:
 ~~- Dirección~~
 ~~- Municipio~~
 ~~- Apartamentos~~
 
-### Apartamento
+~~### Apartamento~~
 
 ~~Campos:~~
 ~~- Planta~~
 ~~- Puerta~~
 ~~- Propietarios~~
 
-### Propietario
+~~### Propietario~~
 
 ~~Campos:~~
 ~~- NIF~~
 ~~- Nombre~~
 ~~- Apellidos~~
 
-## Componentes
+~~## Componentes~~
 
-### Readers
+~~### Readers~~
 
-Haz un reader por cada bean
+~~Haz un reader por cada bean~~
 
 ### BuildingApp
 

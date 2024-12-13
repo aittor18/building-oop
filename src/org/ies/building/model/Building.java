@@ -14,6 +14,10 @@ public class Building {
         this.apartments = apartments;
     }
 
+    public void showBuildingInfo() {
+
+    }
+
     public String getAddress() {
         return address;
     }
