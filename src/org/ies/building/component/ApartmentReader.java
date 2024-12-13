@@ -28,4 +28,17 @@ public class ApartmentReader {
         int size = scanner.nextInt();
         scanner.nextLine();
 
+        Owners[] owners = new Owners[size];
+
+        for (int i = 0; i < size; i++) {
+            owners[i] = ownerReader.read();
+        }
+
+        return new Apartment(
+                floor,
+                door,
+                owners
+        );
+
+    }
 }
