@@ -1,4 +1,4 @@
-package model;
+package org.ies.building.model;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -7,12 +7,6 @@ public class Building {
     private String address;
     private String municipality;
     private Apartment[] apartments;
-
-    public Building(String address, String municipality, int apartments) {
-        this.address = address;
-        this.municipality = municipality;
-        this.apartments = apartments;
-    }
 
     public Building(String address, String municipality, Apartment[] apartments) {
         this.address = address;

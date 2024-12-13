@@ -1,6 +1,7 @@
-package component;
+package org.ies.building.component;
 
-import model.Building;
+import org.ies.building.model.Apartment;
+import org.ies.building.model.Building;
 
 import java.util.Scanner;
 
@@ -17,7 +18,13 @@ public class EdificioReader {
         System.out.print("Introduce el municipio: ");
         String municipality = scanner.nextLine();
         System.out.print("Introduce el número de apartamentos del edificio: ");
-        int apartments = scanner.nextInt();
+        Apartment[] apartment = scanner.nextInt();
         scanner.nextLine();
+
+        return new Building(
+                address,
+                municipality,
+                size
+        );
     }
 }
