@@ -14,8 +14,6 @@ public class Main {
 
         var buildingApp1 = new BuildingApp1(scanner, buildingReader);
 
-        var building = buildingReader.read();
-
-        System.out.println(building);
+        buildingApp1.run();
     }
 }
