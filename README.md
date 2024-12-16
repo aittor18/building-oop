@@ -33,7 +33,7 @@ Campos:
 
 ### BuildingApp
 
-Debe tener un método run() que haga:
+~~Debe tener un método run() que haga:~~
 - Pide los datos del building
 - Inicia un bucle de menú con las siguientes opciones:
     - Muestra toda la información del building

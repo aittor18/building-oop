@@ -4,17 +4,18 @@ import org.ies.building.model.Building;
 
 import java.util.Scanner;
 
-public class BuildingApp {
+public class BuildingApp1 {
     private final Scanner scanner;
-    private final EdificioReader edificioReader;
+    private final BuildingReader buildingReader;
 
-    public BuildingApp(Scanner scanner, EdificioReader edificioReader) {
+    public BuildingApp1(Scanner scanner, BuildingReader buildingReader) {
         this.scanner = scanner;
-        this.edificioReader = edificioReader;
+        this.buildingReader = buildingReader;
     }
 
     public void run() {
         int option;
+        Building building = buildingReader.read();
         do {
             System.out.println("1. Mostrar la información del edificio");
             System.out.println("2. Mostrar apartamento");

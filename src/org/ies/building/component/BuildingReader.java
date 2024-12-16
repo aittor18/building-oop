@@ -5,11 +5,11 @@ import org.ies.building.model.Building;
 
 import java.util.Scanner;
 
-public class EdificioReader {
+public class BuildingReader {
     private final Scanner scanner;
     private final ApartmentReader apartmentReader;
 
-    public EdificioReader(ApartmentReader apartmentReader, Scanner scanner) {
+    public BuildingReader(ApartmentReader apartmentReader, Scanner scanner) {
         this.apartmentReader = apartmentReader;
         this.scanner = scanner;
     }

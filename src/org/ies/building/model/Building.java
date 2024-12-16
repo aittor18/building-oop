@@ -24,7 +24,6 @@ public class Building {
         }
     }
 
-    public int
 
     public String getAddress() {
         return address;
