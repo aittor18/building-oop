@@ -30,7 +30,7 @@ public class BuildingApp1 {
 
             switch (option) {
                 case 1:
-
+                    building.showInfo();
                     break;
 
                 case 2:
