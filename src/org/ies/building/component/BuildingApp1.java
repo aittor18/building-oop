@@ -1,5 +1,6 @@
 package org.ies.building.component;
 
+import org.ies.building.model.Apartment;
 import org.ies.building.model.Building;
 
 import java.util.Scanner;
@@ -34,7 +35,12 @@ public class BuildingApp1 {
                     break;
 
                 case 2:
+                    int floor = scanner.nextInt();
+                    scanner.nextLine();
 
+                    String door = scanner.nextLine();
+
+                    building.showApartment(floor, door);
                     break;
 
                 case 3:

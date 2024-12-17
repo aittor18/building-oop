@@ -23,7 +23,16 @@ public class Building {
             System.out.println("Puerta: " + apartment.getDoor());
         }
     }
+// Dado una planta y una puerta, devuelve el apartamento en esa planta y puerta. Si no existe dicho apartamento devuelve null.
+    public Apartment showApartment(int floor, String door) {
+        for (Apartment apartment : apartments) {
+            if (apartment.getFloor() == floor && apartment.getDoor().equals(door)) {
+                return apartment;
+            }
+        }
 
+        return null;
+    }
 
     public String getAddress() {
         return address;
