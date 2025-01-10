@@ -44,10 +44,17 @@ public class BuildingApp1 {
                     break;
 
                 case 3:
-
+                    System.out.print("Introduce un número de planta: ");
+                    floor = scanner.nextInt();
+                    scanner.nextLine();
+                    var apartment = building.showApartmentFloor(floor);
+                    System.out.println(apartment);
                     break;
 
                 case 4:
+                    System.out.print("Introduce el número de planta: ");
+                    floor = scanner.nextInt();
+                    scanner.nextLine();
 
                     break;
 

@@ -23,7 +23,8 @@ public class Building {
             System.out.println("Puerta: " + apartment.getDoor());
         }
     }
-// Dado una planta y una puerta, devuelve el apartamento en esa planta y puerta. Si no existe dicho apartamento devuelve null.
+
+    // Dado una planta y una puerta, devuelve el apartamento en esa planta y puerta. Si no existe dicho apartamento devuelve null.
     public Apartment showApartment(int floor, String door) {
         for (Apartment apartment : apartments) {
             if (apartment.getFloor() == floor && apartment.getDoor().equals(door)) {
@@ -32,6 +33,26 @@ public class Building {
         }
 
         return null;
+    }
+
+    // Dado una planta, mostrar los apartamentos de esa planta
+    public Apartment showApartmentFloor(int floor) {
+        for (Apartment apartment : apartments) {
+            if (apartment.getFloor() == floor) {
+                return apartment;
+            }
+        }
+        return null;
+    }
+
+    // 4. Mostrar propietarios de escalera:
+    public Owners showOwners(int floor) {
+
+        for (var aparment : apartments) {
+            if (aparment.getFloor() == floor) {
+                return
+            }
+        }
     }
 
     public String getAddress() {
