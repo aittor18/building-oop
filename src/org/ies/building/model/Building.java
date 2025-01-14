@@ -45,14 +45,11 @@ public class Building {
         return null;
     }
 
-    // 4. Mostrar propietarios de escalera:
-    public Owners showOwners(int floor) {
+    // Dado una planta y una puerta, devuelve los propietarios del apartamento de esa puerta y planta. Si no existe dicho apartamento devuelve
+    // null.
 
-        for (var aparment : apartments) {
-            if (aparment.getFloor() == floor) {
-                return
-            }
-        }
+    public Owners showOwners(int floor, String door) {
+
     }
 
     public String getAddress() {
